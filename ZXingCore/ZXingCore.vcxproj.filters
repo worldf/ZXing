@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="aztec">
+      <UniqueIdentifier>{21d31856-d70c-4041-b1c6-81c02e280d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="datamatrix">
+      <UniqueIdentifier>{d30c426a-6cd8-4800-8cc3-589a802c3085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="maxicode">
+      <UniqueIdentifier>{e0ca11b9-5a8c-47ed-8c9c-eb228607278a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oned">
+      <UniqueIdentifier>{d78182ae-2ae3-496d-84a3-75409c46bd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdf417">
+      <UniqueIdentifier>{92517946-7434-4354-98af-3515c65a9188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="qrcode">
+      <UniqueIdentifier>{c5f5e440-a56e-47dd-88ae-1d1b3fead7af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="textcodec">
+      <UniqueIdentifier>{6b867300-2999-4d0c-be67-e99a0d855206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oned\rss">
+      <UniqueIdentifier>{bcbc465f-43a1-43dd-9940-14258b837a7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aztec\AZDecoder.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="aztec\AZDetector.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="aztec\AZEncoder.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="aztec\AZHighLevelEncoder.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="aztec\AZReader.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="aztec\AZToken.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="aztec\AZWriter.cpp">
+      <Filter>aztec</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMBitMatrixParser.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMDataBlock.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMDecoder.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMDefaultPlacement.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMDetector.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMECEncoder.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMHighLevelEncoder.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMReader.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMSymbolInfo.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMVersion.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="datamatrix\DMWriter.cpp">
+      <Filter>datamatrix</Filter>
+    </ClCompile>
+    <ClCompile Include="maxicode\MCBitMatrixParser.cpp">
+      <Filter>maxicode</Filter>
+    </ClCompile>
+    <ClCompile Include="maxicode\MCDecoder.cpp">
+      <Filter>maxicode</Filter>
+    </ClCompile>
+    <ClCompile Include="maxicode\MCReader.cpp">
+      <Filter>maxicode</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\Big5MapTable.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\Big5TextDecoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\Big5TextEncoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\GBTextDecoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\GBTextEncoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\JPTextDecoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\JPTextEncoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\KRHangulMapping.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\KRTextDecoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="textcodec\KRTextEncoder.cpp">
+      <Filter>textcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRAlignmentPattern.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRAlignmentPatternFinder.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRBitMatrixParser.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRCodecMode.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRDataBlock.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRDataMask.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRDecoder.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRDetector.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QREncoder.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRErrorCorrectionLevel.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRFinderPattern.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRFinderPatternFinder.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRFormatInformation.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRMaskUtil.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRMatrixUtil.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRReader.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRVersion.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="qrcode\QRWriter.cpp">
+      <Filter>qrcode</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFBarcodeValue.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFBoundingBox.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFCodewordDecoder.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFDecodedBitStreamParser.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFDetectionResult.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFDetectionResultColumn.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFDetector.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFEncoder.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFHighLevelEncoder.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFModulusGF.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFModulusPoly.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFReader.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFScanningDecoder.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="pdf417\PDFWriter.cpp">
+      <Filter>pdf417</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCodabarReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCodabarWriter.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode39Reader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode39Writer.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode93Reader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode93Writer.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode128Patterns.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode128Reader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODCode128Writer.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODEAN8Reader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODEAN8Writer.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODEAN13Reader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODEAN13Writer.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODEANManufacturerOrgSupport.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODITFReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODITFWriter.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODMultiUPCEANReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODRowReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODRSS14Reader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODRSSExpandedReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCAReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCAWriter.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCEANCommon.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCEANExtensionSupport.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCEANReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCEReader.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODUPCEWriter.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\ODWriterHelper.cpp">
+      <Filter>oned</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\rss\ODRSSExpandedBinaryDecoder.cpp">
+      <Filter>oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\rss\ODRSSFieldParser.cpp">
+      <Filter>oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\rss\ODRSSGenericAppIdDecoder.cpp">
+      <Filter>oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="oned\rss\ODRSSReaderHelper.cpp">
+      <Filter>oned\rss</Filter>
+    </ClCompile>
+    <ClCompile Include="BarcodeFormat.cpp" />
+    <ClCompile Include="BitArray.cpp" />
+    <ClCompile Include="BitMatrix.cpp" />
+    <ClCompile Include="BitSource.cpp" />
+    <ClCompile Include="CharacterSetECI.cpp" />
+    <ClCompile Include="DecodeHints.cpp" />
+    <ClCompile Include="DecodeStatus.cpp" />
+    <ClCompile Include="GenericGF.cpp" />
+    <ClCompile Include="GenericGFPoly.cpp" />
+    <ClCompile Include="GenericLuminanceSource.cpp" />
+    <ClCompile Include="GlobalHistogramBinarizer.cpp" />
+    <ClCompile Include="GridSampler.cpp" />
+    <ClCompile Include="HybridBinarizer.cpp" />
+    <ClCompile Include="LuminanceSource.cpp" />
+    <ClCompile Include="MultiFormatReader.cpp" />
+    <ClCompile Include="MultiFormatWriter.cpp" />
+    <ClCompile Include="PerspectiveTransform.cpp" />
+    <ClCompile Include="ReadBarcode.cpp" />
+    <ClCompile Include="ReedSolomonDecoder.cpp" />
+    <ClCompile Include="ReedSolomonEncoder.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="ResultMetadata.cpp" />
+    <ClCompile Include="ResultPoint.cpp" />
+    <ClCompile Include="TextDecoder.cpp" />
+    <ClCompile Include="TextEncoder.cpp" />
+    <ClCompile Include="TextUtfEncoding.cpp" />
+    <ClCompile Include="WhiteRectDetector.cpp" />
+    <ClCompile Include="ZXBigInteger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aztec\AZDecoder.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZDetector.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZDetectorResult.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZEncoder.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZEncodingState.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZHighLevelEncoder.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZReader.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZToken.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="aztec\AZWriter.h">
+      <Filter>aztec</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMBitMatrixParser.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMDataBlock.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMDecoder.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMDefaultPlacement.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMDetector.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMECB.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMECEncoder.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMEncoderContext.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMHighLevelEncoder.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMReader.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMSymbolInfo.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMSymbolShape.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMVersion.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="datamatrix\DMWriter.h">
+      <Filter>datamatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="maxicode\MCBitMatrixParser.h">
+      <Filter>maxicode</Filter>
+    </ClInclude>
+    <ClInclude Include="maxicode\MCDecoder.h">
+      <Filter>maxicode</Filter>
+    </ClInclude>
+    <ClInclude Include="maxicode\MCReader.h">
+      <Filter>maxicode</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\Big5MapTable.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\Big5TextDecoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\Big5TextEncoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\GBTextDecoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\GBTextEncoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\JPTextDecoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\JPTextEncoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\KRHangulMapping.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\KRTextDecoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="textcodec\KRTextEncoder.h">
+      <Filter>textcodec</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRAlignmentPattern.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRAlignmentPatternFinder.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRBitMatrixParser.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRCodecMode.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRDataBlock.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRDataMask.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRDecoder.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRDecoderMetadata.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRDetector.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRECB.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QREncoder.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QREncodeResult.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRErrorCorrectionLevel.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRFinderPattern.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRFinderPatternFinder.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRFinderPatternInfo.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRFormatInformation.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRMaskUtil.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRMatrixUtil.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRReader.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRVersion.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="qrcode\QRWriter.h">
+      <Filter>qrcode</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFBarcodeMetadata.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFBarcodeValue.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFBoundingBox.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFCodeword.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFCodewordDecoder.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFCompaction.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFDecodedBitStreamParser.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFDecoderResultExtra.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFDetectionResult.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFDetectionResultColumn.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFDetector.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFEncoder.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFHighLevelEncoder.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFModulusGF.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFModulusPoly.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFReader.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFScanningDecoder.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="pdf417\PDFWriter.h">
+      <Filter>pdf417</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCodabarReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCodabarWriter.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode39Reader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode39Writer.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode93Reader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode93Writer.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode128Patterns.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode128Reader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODCode128Writer.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODEAN8Reader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODEAN8Writer.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODEAN13Reader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODEAN13Writer.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODEANManufacturerOrgSupport.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODITFReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODITFWriter.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODMultiUPCEANReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODRowReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODRSS14Reader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODRSSExpandedReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCAReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCAWriter.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCEANCommon.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCEANExtensionSupport.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCEANReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCEReader.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODUPCEWriter.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\ODWriterHelper.h">
+      <Filter>oned</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSDataCharacter.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSExpandedBinaryDecoder.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSExpandedPair.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSExpandedRow.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSFieldParser.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSFinderPattern.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSGenericAppIdDecoder.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSPair.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="oned\rss\ODRSSReaderHelper.h">
+      <Filter>oned\rss</Filter>
+    </ClInclude>
+    <ClInclude Include="BarcodeFormat.h" />
+    <ClInclude Include="BinaryBitmap.h" />
+    <ClInclude Include="BitArray.h" />
+    <ClInclude Include="BitHacks.h" />
+    <ClInclude Include="BitMatrix.h" />
+    <ClInclude Include="BitSource.h" />
+    <ClInclude Include="ByteArray.h" />
+    <ClInclude Include="ByteMatrix.h" />
+    <ClInclude Include="CharacterSet.h" />
+    <ClInclude Include="CharacterSetECI.h" />
+    <ClInclude Include="CustomData.h" />
+    <ClInclude Include="DecodeHints.h" />
+    <ClInclude Include="DecoderResult.h" />
+    <ClInclude Include="DecodeStatus.h" />
+    <ClInclude Include="DetectorResult.h" />
+    <ClInclude Include="GenericGF.h" />
+    <ClInclude Include="GenericGFPoly.h" />
+    <ClInclude Include="GenericLuminanceSource.h" />
+    <ClInclude Include="GlobalHistogramBinarizer.h" />
+    <ClInclude Include="GridSampler.h" />
+    <ClInclude Include="HybridBinarizer.h" />
+    <ClInclude Include="LuminanceSource.h" />
+    <ClInclude Include="MultiFormatReader.h" />
+    <ClInclude Include="MultiFormatWriter.h" />
+    <ClInclude Include="PerspectiveTransform.h" />
+    <ClInclude Include="ReadBarcode.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="ReedSolomonDecoder.h" />
+    <ClInclude Include="ReedSolomonEncoder.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="ResultMetadata.h" />
+    <ClInclude Include="ResultPoint.h" />
+    <ClInclude Include="TextDecoder.h" />
+    <ClInclude Include="TextEncoder.h" />
+    <ClInclude Include="TextUtfEncoding.h" />
+    <ClInclude Include="WhiteRectDetector.h" />
+    <ClInclude Include="ZXBigInteger.h" />
+    <ClInclude Include="ZXConfig.h" />
+    <ClInclude Include="ZXContainerAlgorithms.h" />
+    <ClInclude Include="ZXFilesystem.h" />
+    <ClInclude Include="ZXNullable.h" />
+    <ClInclude Include="ZXNumeric.h" />
+    <ClInclude Include="ZXStrConvWorkaround.h" />
+    <ClInclude Include="ZXTestSupport.h" />
+  </ItemGroup>
+</Project>

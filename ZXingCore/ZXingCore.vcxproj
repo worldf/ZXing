@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61855CB9-0918-3F5A-A66A-524AF76DEEC9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZXingCore</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ZXingCore.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ZXingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\example\ZXingCore\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ZXingCore.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ZXingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\example\ZXingCore\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ZXingCore.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">ZXingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\example\ZXingCore\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ZXingCore.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">ZXingCore</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\aztec;.\datamatrix;.\maxicode;.\textcodec;.\qrcode;.\pdf417;.\oned;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std:c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std:c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std:c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std:c++14</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\fzq\Work\KaicomCode\Decoder\zxing-cpp\core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aztec\AZDecoder.cpp" />
+    <ClCompile Include="aztec\AZDetector.cpp" />
+    <ClCompile Include="aztec\AZEncoder.cpp" />
+    <ClCompile Include="aztec\AZHighLevelEncoder.cpp" />
+    <ClCompile Include="aztec\AZReader.cpp" />
+    <ClCompile Include="aztec\AZToken.cpp" />
+    <ClCompile Include="aztec\AZWriter.cpp" />
+    <ClCompile Include="BarcodeFormat.cpp" />
+    <ClCompile Include="BitArray.cpp" />
+    <ClCompile Include="BitMatrix.cpp" />
+    <ClCompile Include="BitSource.cpp" />
+    <ClCompile Include="CharacterSetECI.cpp" />
+    <ClCompile Include="datamatrix\DMBitMatrixParser.cpp" />
+    <ClCompile Include="datamatrix\DMDataBlock.cpp" />
+    <ClCompile Include="datamatrix\DMDecoder.cpp" />
+    <ClCompile Include="datamatrix\DMDefaultPlacement.cpp" />
+    <ClCompile Include="datamatrix\DMDetector.cpp" />
+    <ClCompile Include="datamatrix\DMECEncoder.cpp" />
+    <ClCompile Include="datamatrix\DMHighLevelEncoder.cpp" />
+    <ClCompile Include="datamatrix\DMReader.cpp" />
+    <ClCompile Include="datamatrix\DMSymbolInfo.cpp" />
+    <ClCompile Include="datamatrix\DMVersion.cpp" />
+    <ClCompile Include="datamatrix\DMWriter.cpp" />
+    <ClCompile Include="DecodeHints.cpp" />
+    <ClCompile Include="DecodeStatus.cpp" />
+    <ClCompile Include="GenericGF.cpp" />
+    <ClCompile Include="GenericGFPoly.cpp" />
+    <ClCompile Include="GenericLuminanceSource.cpp" />
+    <ClCompile Include="GlobalHistogramBinarizer.cpp" />
+    <ClCompile Include="GridSampler.cpp" />
+    <ClCompile Include="HybridBinarizer.cpp" />
+    <ClCompile Include="LuminanceSource.cpp" />
+    <ClCompile Include="maxicode\MCBitMatrixParser.cpp" />
+    <ClCompile Include="maxicode\MCDecoder.cpp" />
+    <ClCompile Include="maxicode\MCReader.cpp" />
+    <ClCompile Include="MultiFormatReader.cpp" />
+    <ClCompile Include="MultiFormatWriter.cpp" />
+    <ClCompile Include="oned\ODCodabarReader.cpp" />
+    <ClCompile Include="oned\ODCodabarWriter.cpp" />
+    <ClCompile Include="oned\ODCode128Patterns.cpp" />
+    <ClCompile Include="oned\ODCode128Reader.cpp" />
+    <ClCompile Include="oned\ODCode128Writer.cpp" />
+    <ClCompile Include="oned\ODCode39Reader.cpp" />
+    <ClCompile Include="oned\ODCode39Writer.cpp" />
+    <ClCompile Include="oned\ODCode93Reader.cpp" />
+    <ClCompile Include="oned\ODCode93Writer.cpp" />
+    <ClCompile Include="oned\ODEAN13Reader.cpp" />
+    <ClCompile Include="oned\ODEAN13Writer.cpp" />
+    <ClCompile Include="oned\ODEAN8Reader.cpp" />
+    <ClCompile Include="oned\ODEAN8Writer.cpp" />
+    <ClCompile Include="oned\ODEANManufacturerOrgSupport.cpp" />
+    <ClCompile Include="oned\ODITFReader.cpp" />
+    <ClCompile Include="oned\ODITFWriter.cpp" />
+    <ClCompile Include="oned\ODMultiUPCEANReader.cpp" />
+    <ClCompile Include="oned\ODReader.cpp" />
+    <ClCompile Include="oned\ODRowReader.cpp" />
+    <ClCompile Include="oned\ODRSS14Reader.cpp" />
+    <ClCompile Include="oned\ODRSSExpandedReader.cpp" />
+    <ClCompile Include="oned\ODUPCAReader.cpp" />
+    <ClCompile Include="oned\ODUPCAWriter.cpp" />
+    <ClCompile Include="oned\ODUPCEANCommon.cpp" />
+    <ClCompile Include="oned\ODUPCEANExtensionSupport.cpp" />
+    <ClCompile Include="oned\ODUPCEANReader.cpp" />
+    <ClCompile Include="oned\ODUPCEReader.cpp" />
+    <ClCompile Include="oned\ODUPCEWriter.cpp" />
+    <ClCompile Include="oned\ODWriterHelper.cpp" />
+    <ClCompile Include="oned\rss\ODRSSExpandedBinaryDecoder.cpp" />
+    <ClCompile Include="oned\rss\ODRSSFieldParser.cpp" />
+    <ClCompile Include="oned\rss\ODRSSGenericAppIdDecoder.cpp" />
+    <ClCompile Include="oned\rss\ODRSSReaderHelper.cpp" />
+    <ClCompile Include="pdf417\PDFBarcodeValue.cpp" />
+    <ClCompile Include="pdf417\PDFBoundingBox.cpp" />
+    <ClCompile Include="pdf417\PDFCodewordDecoder.cpp" />
+    <ClCompile Include="pdf417\PDFDecodedBitStreamParser.cpp" />
+    <ClCompile Include="pdf417\PDFDetectionResult.cpp" />
+    <ClCompile Include="pdf417\PDFDetectionResultColumn.cpp" />
+    <ClCompile Include="pdf417\PDFDetector.cpp" />
+    <ClCompile Include="pdf417\PDFEncoder.cpp" />
+    <ClCompile Include="pdf417\PDFHighLevelEncoder.cpp" />
+    <ClCompile Include="pdf417\PDFModulusGF.cpp" />
+    <ClCompile Include="pdf417\PDFModulusPoly.cpp" />
+    <ClCompile Include="pdf417\PDFReader.cpp" />
+    <ClCompile Include="pdf417\PDFScanningDecoder.cpp" />
+    <ClCompile Include="pdf417\PDFWriter.cpp" />
+    <ClCompile Include="PerspectiveTransform.cpp" />
+    <ClCompile Include="qrcode\QRAlignmentPattern.cpp" />
+    <ClCompile Include="qrcode\QRAlignmentPatternFinder.cpp" />
+    <ClCompile Include="qrcode\QRBitMatrixParser.cpp" />
+    <ClCompile Include="qrcode\QRCodecMode.cpp" />
+    <ClCompile Include="qrcode\QRDataBlock.cpp" />
+    <ClCompile Include="qrcode\QRDataMask.cpp" />
+    <ClCompile Include="qrcode\QRDecoder.cpp" />
+    <ClCompile Include="qrcode\QRDetector.cpp" />
+    <ClCompile Include="qrcode\QREncoder.cpp" />
+    <ClCompile Include="qrcode\QRErrorCorrectionLevel.cpp" />
+    <ClCompile Include="qrcode\QRFinderPattern.cpp" />
+    <ClCompile Include="qrcode\QRFinderPatternFinder.cpp" />
+    <ClCompile Include="qrcode\QRFormatInformation.cpp" />
+    <ClCompile Include="qrcode\QRMaskUtil.cpp" />
+    <ClCompile Include="qrcode\QRMatrixUtil.cpp" />
+    <ClCompile Include="qrcode\QRReader.cpp" />
+    <ClCompile Include="qrcode\QRVersion.cpp" />
+    <ClCompile Include="qrcode\QRWriter.cpp" />
+    <ClCompile Include="ReadBarcode.cpp" />
+    <ClCompile Include="ReedSolomonDecoder.cpp" />
+    <ClCompile Include="ReedSolomonEncoder.cpp" />
+    <ClCompile Include="Result.cpp" />
+    <ClCompile Include="ResultMetadata.cpp" />
+    <ClCompile Include="ResultPoint.cpp" />
+    <ClCompile Include="textcodec\Big5MapTable.cpp" />
+    <ClCompile Include="textcodec\Big5TextDecoder.cpp" />
+    <ClCompile Include="textcodec\Big5TextEncoder.cpp" />
+    <ClCompile Include="textcodec\GBTextDecoder.cpp" />
+    <ClCompile Include="textcodec\GBTextEncoder.cpp" />
+    <ClCompile Include="textcodec\JPTextDecoder.cpp" />
+    <ClCompile Include="textcodec\JPTextEncoder.cpp" />
+    <ClCompile Include="textcodec\KRHangulMapping.cpp" />
+    <ClCompile Include="textcodec\KRTextDecoder.cpp" />
+    <ClCompile Include="textcodec\KRTextEncoder.cpp" />
+    <ClCompile Include="TextDecoder.cpp" />
+    <ClCompile Include="TextEncoder.cpp" />
+    <ClCompile Include="TextUtfEncoding.cpp" />
+    <ClCompile Include="WhiteRectDetector.cpp" />
+    <ClCompile Include="ZXBigInteger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aztec\AZDecoder.h" />
+    <ClInclude Include="aztec\AZDetector.h" />
+    <ClInclude Include="aztec\AZDetectorResult.h" />
+    <ClInclude Include="aztec\AZEncoder.h" />
+    <ClInclude Include="aztec\AZEncodingState.h" />
+    <ClInclude Include="aztec\AZHighLevelEncoder.h" />
+    <ClInclude Include="aztec\AZReader.h" />
+    <ClInclude Include="aztec\AZToken.h" />
+    <ClInclude Include="aztec\AZWriter.h" />
+    <ClInclude Include="BarcodeFormat.h" />
+    <ClInclude Include="BinaryBitmap.h" />
+    <ClInclude Include="BitArray.h" />
+    <ClInclude Include="BitHacks.h" />
+    <ClInclude Include="BitMatrix.h" />
+    <ClInclude Include="BitSource.h" />
+    <ClInclude Include="ByteArray.h" />
+    <ClInclude Include="ByteMatrix.h" />
+    <ClInclude Include="CharacterSet.h" />
+    <ClInclude Include="CharacterSetECI.h" />
+    <ClInclude Include="CustomData.h" />
+    <ClInclude Include="datamatrix\DMBitMatrixParser.h" />
+    <ClInclude Include="datamatrix\DMDataBlock.h" />
+    <ClInclude Include="datamatrix\DMDecoder.h" />
+    <ClInclude Include="datamatrix\DMDefaultPlacement.h" />
+    <ClInclude Include="datamatrix\DMDetector.h" />
+    <ClInclude Include="datamatrix\DMECB.h" />
+    <ClInclude Include="datamatrix\DMECEncoder.h" />
+    <ClInclude Include="datamatrix\DMEncoderContext.h" />
+    <ClInclude Include="datamatrix\DMHighLevelEncoder.h" />
+    <ClInclude Include="datamatrix\DMReader.h" />
+    <ClInclude Include="datamatrix\DMSymbolInfo.h" />
+    <ClInclude Include="datamatrix\DMSymbolShape.h" />
+    <ClInclude Include="datamatrix\DMVersion.h" />
+    <ClInclude Include="datamatrix\DMWriter.h" />
+    <ClInclude Include="DecodeHints.h" />
+    <ClInclude Include="DecoderResult.h" />
+    <ClInclude Include="DecodeStatus.h" />
+    <ClInclude Include="DetectorResult.h" />
+    <ClInclude Include="GenericGF.h" />
+    <ClInclude Include="GenericGFPoly.h" />
+    <ClInclude Include="GenericLuminanceSource.h" />
+    <ClInclude Include="GlobalHistogramBinarizer.h" />
+    <ClInclude Include="GridSampler.h" />
+    <ClInclude Include="HybridBinarizer.h" />
+    <ClInclude Include="LuminanceSource.h" />
+    <ClInclude Include="maxicode\MCBitMatrixParser.h" />
+    <ClInclude Include="maxicode\MCDecoder.h" />
+    <ClInclude Include="maxicode\MCReader.h" />
+    <ClInclude Include="MultiFormatReader.h" />
+    <ClInclude Include="MultiFormatWriter.h" />
+    <ClInclude Include="oned\ODCodabarReader.h" />
+    <ClInclude Include="oned\ODCodabarWriter.h" />
+    <ClInclude Include="oned\ODCode128Patterns.h" />
+    <ClInclude Include="oned\ODCode128Reader.h" />
+    <ClInclude Include="oned\ODCode128Writer.h" />
+    <ClInclude Include="oned\ODCode39Reader.h" />
+    <ClInclude Include="oned\ODCode39Writer.h" />
+    <ClInclude Include="oned\ODCode93Reader.h" />
+    <ClInclude Include="oned\ODCode93Writer.h" />
+    <ClInclude Include="oned\ODEAN13Reader.h" />
+    <ClInclude Include="oned\ODEAN13Writer.h" />
+    <ClInclude Include="oned\ODEAN8Reader.h" />
+    <ClInclude Include="oned\ODEAN8Writer.h" />
+    <ClInclude Include="oned\ODEANManufacturerOrgSupport.h" />
+    <ClInclude Include="oned\ODITFReader.h" />
+    <ClInclude Include="oned\ODITFWriter.h" />
+    <ClInclude Include="oned\ODMultiUPCEANReader.h" />
+    <ClInclude Include="oned\ODReader.h" />
+    <ClInclude Include="oned\ODRowReader.h" />
+    <ClInclude Include="oned\ODRSS14Reader.h" />
+    <ClInclude Include="oned\ODRSSExpandedReader.h" />
+    <ClInclude Include="oned\ODUPCAReader.h" />
+    <ClInclude Include="oned\ODUPCAWriter.h" />
+    <ClInclude Include="oned\ODUPCEANCommon.h" />
+    <ClInclude Include="oned\ODUPCEANExtensionSupport.h" />
+    <ClInclude Include="oned\ODUPCEANReader.h" />
+    <ClInclude Include="oned\ODUPCEReader.h" />
+    <ClInclude Include="oned\ODUPCEWriter.h" />
+    <ClInclude Include="oned\ODWriterHelper.h" />
+    <ClInclude Include="oned\rss\ODRSSDataCharacter.h" />
+    <ClInclude Include="oned\rss\ODRSSExpandedBinaryDecoder.h" />
+    <ClInclude Include="oned\rss\ODRSSExpandedPair.h" />
+    <ClInclude Include="oned\rss\ODRSSExpandedRow.h" />
+    <ClInclude Include="oned\rss\ODRSSFieldParser.h" />
+    <ClInclude Include="oned\rss\ODRSSFinderPattern.h" />
+    <ClInclude Include="oned\rss\ODRSSGenericAppIdDecoder.h" />
+    <ClInclude Include="oned\rss\ODRSSPair.h" />
+    <ClInclude Include="oned\rss\ODRSSReaderHelper.h" />
+    <ClInclude Include="pdf417\PDFBarcodeMetadata.h" />
+    <ClInclude Include="pdf417\PDFBarcodeValue.h" />
+    <ClInclude Include="pdf417\PDFBoundingBox.h" />
+    <ClInclude Include="pdf417\PDFCodeword.h" />
+    <ClInclude Include="pdf417\PDFCodewordDecoder.h" />
+    <ClInclude Include="pdf417\PDFCompaction.h" />
+    <ClInclude Include="pdf417\PDFDecodedBitStreamParser.h" />
+    <ClInclude Include="pdf417\PDFDecoderResultExtra.h" />
+    <ClInclude Include="pdf417\PDFDetectionResult.h" />
+    <ClInclude Include="pdf417\PDFDetectionResultColumn.h" />
+    <ClInclude Include="pdf417\PDFDetector.h" />
+    <ClInclude Include="pdf417\PDFEncoder.h" />
+    <ClInclude Include="pdf417\PDFHighLevelEncoder.h" />
+    <ClInclude Include="pdf417\PDFModulusGF.h" />
+    <ClInclude Include="pdf417\PDFModulusPoly.h" />
+    <ClInclude Include="pdf417\PDFReader.h" />
+    <ClInclude Include="pdf417\PDFScanningDecoder.h" />
+    <ClInclude Include="pdf417\PDFWriter.h" />
+    <ClInclude Include="PerspectiveTransform.h" />
+    <ClInclude Include="qrcode\QRAlignmentPattern.h" />
+    <ClInclude Include="qrcode\QRAlignmentPatternFinder.h" />
+    <ClInclude Include="qrcode\QRBitMatrixParser.h" />
+    <ClInclude Include="qrcode\QRCodecMode.h" />
+    <ClInclude Include="qrcode\QRDataBlock.h" />
+    <ClInclude Include="qrcode\QRDataMask.h" />
+    <ClInclude Include="qrcode\QRDecoder.h" />
+    <ClInclude Include="qrcode\QRDecoderMetadata.h" />
+    <ClInclude Include="qrcode\QRDetector.h" />
+    <ClInclude Include="qrcode\QRECB.h" />
+    <ClInclude Include="qrcode\QREncoder.h" />
+    <ClInclude Include="qrcode\QREncodeResult.h" />
+    <ClInclude Include="qrcode\QRErrorCorrectionLevel.h" />
+    <ClInclude Include="qrcode\QRFinderPattern.h" />
+    <ClInclude Include="qrcode\QRFinderPatternFinder.h" />
+    <ClInclude Include="qrcode\QRFinderPatternInfo.h" />
+    <ClInclude Include="qrcode\QRFormatInformation.h" />
+    <ClInclude Include="qrcode\QRMaskUtil.h" />
+    <ClInclude Include="qrcode\QRMatrixUtil.h" />
+    <ClInclude Include="qrcode\QRReader.h" />
+    <ClInclude Include="qrcode\QRVersion.h" />
+    <ClInclude Include="qrcode\QRWriter.h" />
+    <ClInclude Include="ReadBarcode.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="ReedSolomonDecoder.h" />
+    <ClInclude Include="ReedSolomonEncoder.h" />
+    <ClInclude Include="Result.h" />
+    <ClInclude Include="ResultMetadata.h" />
+    <ClInclude Include="ResultPoint.h" />
+    <ClInclude Include="textcodec\Big5MapTable.h" />
+    <ClInclude Include="textcodec\Big5TextDecoder.h" />
+    <ClInclude Include="textcodec\Big5TextEncoder.h" />
+    <ClInclude Include="textcodec\GBTextDecoder.h" />
+    <ClInclude Include="textcodec\GBTextEncoder.h" />
+    <ClInclude Include="textcodec\JPTextDecoder.h" />
+    <ClInclude Include="textcodec\JPTextEncoder.h" />
+    <ClInclude Include="textcodec\KRHangulMapping.h" />
+    <ClInclude Include="textcodec\KRTextDecoder.h" />
+    <ClInclude Include="textcodec\KRTextEncoder.h" />
+    <ClInclude Include="TextDecoder.h" />
+    <ClInclude Include="TextEncoder.h" />
+    <ClInclude Include="TextUtfEncoding.h" />
+    <ClInclude Include="WhiteRectDetector.h" />
+    <ClInclude Include="ZXBigInteger.h" />
+    <ClInclude Include="ZXConfig.h" />
+    <ClInclude Include="ZXContainerAlgorithms.h" />
+    <ClInclude Include="ZXFilesystem.h" />
+    <ClInclude Include="ZXNullable.h" />
+    <ClInclude Include="ZXNumeric.h" />
+    <ClInclude Include="ZXStrConvWorkaround.h" />
+    <ClInclude Include="ZXTestSupport.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
