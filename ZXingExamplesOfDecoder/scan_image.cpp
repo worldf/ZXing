@@ -128,8 +128,8 @@ int main(int argc, char* argv[])
 			std::cout << "EC Level: " << TextUtfEncoding::ToUtf8(errLevel) << "\n";
 		}
 
-		int a = 1;
-		std::cin >> a;
+		int num = 1;
+		std::cin >> num;
 
 		return 0;
 	}
